@@ -13,7 +13,7 @@ const work = [
     number: "02",
     title: "Gato Lanches",
     description: "Identidade digital para uma marca clássica de Campinas.",
-    href: "https://gato-lanches.goomer.app/",
+    href: "https://preview.kwztecnologia.net.br/",
     image: "/previews/02-gato-lanches.png",
     tone: "paper",
   },
