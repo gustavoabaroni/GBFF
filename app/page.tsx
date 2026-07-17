@@ -5,14 +5,16 @@ const work = [
     title: "KWZ Tecnologia",
     description: "Presença digital para tecnologia e negócios.",
     href: "http://kwztecnologia.net.br/",
+    image: "/previews/01-kwz.png",
     tone: "yellow",
   },
   {
     type: "Site",
     number: "02",
-    title: "KWZ Preview",
-    description: "Experiência web com foco em clareza e conversão.",
-    href: "https://preview.kwztecnologia.net.br/",
+    title: "Gato Lanches",
+    description: "Identidade digital para uma marca clássica de Campinas.",
+    href: "https://linktr.ee/gatolanches",
+    image: "/previews/02-gato-lanches.png",
     tone: "paper",
   },
   {
@@ -21,6 +23,7 @@ const work = [
     title: "Meu Pharma Club",
     description: "Plataforma digital para o segmento farmacêutico.",
     href: "https://meupharmaclub.com.br/",
+    image: "/previews/03-meu-pharma.png",
     tone: "black",
   },
   {
@@ -29,6 +32,7 @@ const work = [
     title: "Narrativas em movimento",
     description: "Produção audiovisual pensada para prender atenção.",
     href: "https://drive.google.com/file/d/1YnLcUgGUcZTG8yl9byGbC1cc284vVFRv/view?usp=drive_link",
+    image: "/previews/04-video-drive.jpg",
     tone: "black",
   },
   {
@@ -37,6 +41,7 @@ const work = [
     title: "Conteúdo para YouTube",
     description: "Roteiro, ritmo e edição com linguagem de plataforma.",
     href: "http://youtube.com/watch?si=LwqX487tn33BobwA&v=qgSrFGlWXBo&feature=youtu.be",
+    image: "/previews/05-video-youtube.jpg",
     tone: "yellow",
   },
   {
@@ -45,6 +50,7 @@ const work = [
     title: "Comunicação audiovisual",
     description: "Ideias transformadas em histórias que circulam.",
     href: "https://www.youtube.com/watch?v=5p8Fd9XP6EQ",
+    image: "/previews/06-video-youtube.jpg",
     tone: "paper",
   },
   {
@@ -53,6 +59,7 @@ const work = [
     title: "Pharmacia Vespasiano",
     description: "Sistema visual com personalidade e consistência.",
     href: "https://www.behance.net/gallery/218305061/Pharmacia-Vespasiano",
+    image: "/previews/07-pharmacia.png",
     tone: "paper",
   },
   {
@@ -61,6 +68,7 @@ const work = [
     title: "Projeto de marca",
     description: "Conceito, linguagem e aplicações para uma marca viva.",
     href: "https://drive.google.com/file/d/1kqNjeo7sXI71van19r3Dqan2eY_gyyud/view?usp=drive_link",
+    image: "/previews/08-brand-drive.jpg",
     tone: "black",
   },
   {
@@ -69,6 +77,7 @@ const work = [
     title: "Ecos de Desolação",
     description: "Direção de arte inspirada em Crime e Castigo.",
     href: "https://www.behance.net/gallery/191913797/Ecos-de-Desolacao-Crime-e-Castigo",
+    image: "/previews/09-ecos.png",
     tone: "yellow",
   },
 ];
@@ -191,8 +200,8 @@ export default function Home() {
         <div className="work-grid">
           {work.map((item) => (
             <a className={`work-card ${item.tone}`} href={item.href} target="_blank" rel="noreferrer" key={item.number}>
+              <img className="card-preview" src={item.image} alt={`Prévia do projeto ${item.title}`} />
               <div className="card-top"><span>{item.type}</span><span>{item.number}</span></div>
-              <div className="card-mark" aria-hidden="true">{item.title.slice(0, 2).toUpperCase()}</div>
               <div className="card-bottom">
                 <div><h3>{item.title}</h3><p>{item.description}</p></div>
                 <div className="card-arrow"><Arrow /></div>
