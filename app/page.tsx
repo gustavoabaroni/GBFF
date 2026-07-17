@@ -14,7 +14,7 @@ const work = [
     title: "Gato Lanches",
     description: "Identidade digital para uma marca clássica de Campinas.",
     href: "https://preview.kwztecnologia.net.br/",
-    image: "/previews/02-gato-lanches.png",
+    image: "/previews/02-gatto-nova-identidade.png",
     tone: "paper",
   },
   {
