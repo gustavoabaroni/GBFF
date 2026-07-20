@@ -6,7 +6,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gbff-criativa.gustavoabaroni.chatgpt.site"),
+  metadataBase: new URL("https://gbffagencia.vercel.app"),
   title: "GBFF — Estratégia, design e conteúdo",
   description: "Agência criativa com mais de 10 anos de experiência nos mercados digital e tradicional.",
   icons: { icon: "/assets/page-1-image-1.png" },

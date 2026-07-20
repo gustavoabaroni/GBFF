@@ -174,7 +174,7 @@ export default function Home() {
           <a href="#trabalhos">Trabalhos</a>
         </nav>
         <a className="header-cta" href="https://wa.me/5541998663243" target="_blank" rel="noreferrer">
-          Vamos conversar <Arrow />
+          <span className="header-cta-label">Vamos conversar</span> <Arrow />
         </a>
       </header>
 
